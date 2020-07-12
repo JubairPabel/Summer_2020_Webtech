@@ -1,0 +1,26 @@
+<ADmissionDateOfStaffs>
+	<Staffs>
+		<SL.NO>23</SL.NO>
+		<Name>John Carter</Name>
+		<Admission_Date>25/12/2015</Admission_Date>
+
+	</Staffs>
+
+		<Staffs>
+		<SL.NO>29</SL.NO>
+		<Name>Bob MArshal</Name>
+		<Admission_Date>13/01/1999</Admission_Date>
+
+	</Staffs>
+
+
+	<Staffs>
+		<SL.NO>35</SL.NO>
+		<Name>Clark Kent</Name>
+		<Admission_Date>17/06/2005</Admission_Date>
+
+	</Staffs>
+
+</ADmissionDateOfStaffs>
+
+
