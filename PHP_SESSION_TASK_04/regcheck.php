@@ -12,24 +12,23 @@
 
 		$enc = md5($password);
 
-		if(empty($uname) || empty($password) || empty($email) || empty($uname) || empty($c_password) ){
+		if(empty($uname) || empty($password) || empty($email) || empty($uname) || empty($c_password) )
+		{
 			echo "null submission";
 		}
 		else
-		if($password == $c_password)
-        {
-        	
-
-            setcookie('name', $name, time()+3600, '/');
-			setcookie('uname', $uname, time()+3600, '/');
-			setcookie('email', $email, time()+3600, '/');
-			setcookie('password', $enc, time()+3600, '/');
-          header('location: login.html');
-
+			if($password == $c_password)
+		{
+		setcookie('name', $name, time()+3600, '/');
+		setcookie('uname', $uname, time()+3600, '/');
+		setcookie('email', $email, time()+3600, '/');
+		setcookie('password', $enc, time()+3600, '/');
+		header('location: login.php');
 		}
-		else{
-			echo "Password not matched!!";
+		else {
+			echo "Password not matched";
 		}
+		
 
 	}
 ?>
