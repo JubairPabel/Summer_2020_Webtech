@@ -1,20 +1,21 @@
 <?php
-	session_start();
+	
 
 	if(isset($_POST['submit'])){
         $name = $_POST['name'];
-		$uname = $_POST['username'];
+		$uname = $_POST['userName'];
 		$email = $_POST['email'];
 		$password = $_POST['password'];
-        $email = $_POST['email'];
         $c_password = $_POST['confirmPassword'];
-
+        
+        echo "recorded";
 
 		$enc = md5($password);
 
-		if(empty($uname) || empty($password) || empty($email)){
+		if(empty($uname) || empty($password) || empty($email) || empty($uname) || empty($c_password) ){
 			echo "null submission";
-		}else
+		}
+		else
 		if($password == $c_password)
         {
         	
@@ -23,7 +24,7 @@
 			setcookie('uname', $uname, time()+3600, '/');
 			setcookie('email', $email, time()+3600, '/');
 			setcookie('password', $enc, time()+3600, '/');
-          
+          header('location: login.html');
 
 		}
 		else{
@@ -31,6 +32,4 @@
 		}
 
 	}
-
-
 ?>
