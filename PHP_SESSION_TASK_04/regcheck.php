@@ -14,7 +14,8 @@
 
 		if(empty($uname) || empty($password) || empty($email)){
 			echo "null submission";
-		}else if($password == $c_password)
+		}else
+		if($password == $c_password)
         {
         	
 
@@ -24,6 +25,9 @@
 			setcookie('password', $enc, time()+3600, '/');
           
 
+		}
+		else{
+			echo "Password not matched!!";
 		}
 
 	}
