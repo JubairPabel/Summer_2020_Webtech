@@ -7,22 +7,17 @@
 		$password 	= $_POST['password'];
         
         $type = "Admin";
-		if(empty($uname) || empty($password)){
+		if(empty($uname) || empty($password))
+		{
 			echo "null submission";
 
-		}else{
+		}
+		else
+		{
 			
 			$file = fopen('user.txt', 'r');
 			$data = fread($file, filesize('user.txt'));
 			$user = explode('|', $data);
-
-
-			/*while(!feof($data)){
-				$user = fgets($data);
-				$user = explode('|', $data);
-			}*/
-
-			//print_r($user);
 
 			if(trim($user[0]) == $uid && trim($user[1]) == $password)
 
@@ -45,8 +40,10 @@
 			}
 		}
 
-	}else{
-		header("location: login.html");
+	}
+	else
+	{
+		header("location: Login.html");
 	}
 
 
