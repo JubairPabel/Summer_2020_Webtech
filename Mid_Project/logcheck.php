@@ -4,7 +4,7 @@ session_start();
 
 if(isset($_SESSION['name']) || isset($_COOKIE['remember']))
 {
-
+  
 }
 	
 
@@ -97,6 +97,8 @@ if($err == 'ok')
            if($remember == 'yes')
     		{
     			setcookie('remember' , $row['u_id'] , time()+3600);
+    			setcookie('email' , $row['email'] , time()+3600);
+    			setcookie('pass' , $row['pass'] , time()+3600);
     		}
     		else
     		{
