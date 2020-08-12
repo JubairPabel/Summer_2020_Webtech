@@ -8,17 +8,15 @@ if(isset($_SESSION['name']) || isset($_COOKIE['remember']))
 }
 	
 
-if(isset($_POST['submit']))
+if(isset($_POST['login']))
 {
-
-
 
 if ($_POST['email']) 
 {
- $uname = $_POST['email'];
- if ($uname == '') 
+ $email = $_POST['email'];
+ if ($email == '') 
 {
- 	echo "email can not be empty";
+ 	echo "email can not be empty \r \n";
  	$err = '';
 }
 else
@@ -27,6 +25,7 @@ else
 }
 		
 }
+
 else
 {
   echo "email is Blank";
@@ -70,18 +69,18 @@ if($err == 'ok')
      
     if (($result = $conn->query($sql)) !== FALSE)
     {
-    	while($row = $result->fetch_assoc())
+    	if($row = $result->fetch_assoc())
     	{
     		$_SESSION['id'] = $row['u_id'];
            
            if($row['u_type'] == '1' )
            {
-              
+              header('location: sellerhome.html');
            }
            else
            if($row['u_type'] == '2' )
            {
-           	
+           	header('location: sellerhome.html');
            }
            else
            if($row['u_type'] == '3' )
@@ -114,10 +113,4 @@ if($err == 'ok')
 }
 
 }
-
-
-
-
-
-
 ?>
