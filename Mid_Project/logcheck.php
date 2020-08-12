@@ -96,9 +96,13 @@ if($err == 'ok')
 
            if($remember == 'yes')
     		{
-    			setcookie('remember' , $row['u_id'] , time()+3600);
-    			setcookie('email' , $row['email'] , time()+3600);
-    			setcookie('pass' , $row['pass'] , time()+3600);
+    			setcookie('status' ,"ok" , time()+3600*60);
+    			
+
+                 $_SESSION['name'] = $row['name'];
+                  $_SESSION['email'] = $row['email'];
+                   $_SESSION['pass'] = $row['pass'];
+
     		}
     		else
     		{
