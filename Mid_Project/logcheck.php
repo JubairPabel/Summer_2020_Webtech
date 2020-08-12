@@ -16,7 +16,7 @@ if ($_POST['email'])
  $email = $_POST['email'];
  if ($email == '') 
 {
- 	echo "email can not be empty \r \n";
+ 	echo "email can not be empty";
  	$err = '';
 }
 else
@@ -72,15 +72,16 @@ if($err == 'ok')
     	if($row = $result->fetch_assoc())
     	{
     		$_SESSION['id'] = $row['u_id'];
+    		setcookie('name' , $row['name'] , time()+3600);
            
            if($row['u_type'] == '1' )
            {
-              header('location: sellerhome.html');
+        
            }
            else
            if($row['u_type'] == '2' )
            {
-           	header('location: sellerhome.html');
+           	
            }
            else
            if($row['u_type'] == '3' )
