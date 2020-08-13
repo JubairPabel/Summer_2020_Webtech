@@ -72,6 +72,9 @@ if($err == 'ok')
     	if($row = $result->fetch_assoc())
     	{
     		$_SESSION['id'] = $row['u_id'];
+          $_SESSION['name'] = $row['name'];
+                  $_SESSION['email'] = $row['email'];
+                   $_SESSION['pass'] = $row['pass'];
     		setcookie('name' , $row['name'] , time()+3600);
            
            if($row['u_type'] == '1' )
@@ -96,17 +99,18 @@ if($err == 'ok')
 
            if($remember == 'yes')
     		{
-    			setcookie('status' ,"ok" , time()+3600*60);
-    			
 
-                 $_SESSION['name'] = $row['name'];
-                  $_SESSION['email'] = $row['email'];
-                   $_SESSION['pass'] = $row['pass'];
+    			setcookie('email' ,$row['email'] time()+3600*60);
+    			//setcookie('pass' ,$row['name'], time()+3600*60);
+          //setcookie('status' ,"ok" , time()+3600*60);
+                 //$_SESSION['name'] = $row['name'];
+                 // $_SESSION['email'] = $row['email'];
+                  // $_SESSION['pass'] = $row['pass'];
 
     		}
     		else
     		{
-    			setcookie('remember', "");
+    			setcookie('status', "");
     		}
 
     		
