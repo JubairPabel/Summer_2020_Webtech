@@ -1,6 +1,8 @@
 
 <?php
 session_start();
+
+$name = $_SESSION['name']
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +18,7 @@ session_start();
 				<a href="Logout.php">Logout</a>
 			</td>
 			<td align="center">
-				Welcome <?php   echo $_COOKIE[$name] ?> 
+				<h1> Welcome <?php   echo $name ?> </h1>
 				<br>
 				<br>
 				<a href="services.html">Services</a><br>
@@ -29,7 +31,7 @@ session_start();
 				<a href="Help.html">Help!</a><br>
 				<a href="Reports.html">Reports</a><br>
 				<a href="FAQ.html">FAQ</a><br>
-				<a href="C_R.html">Comment & Ratin/a>g<br>
+				<a href="C_R.html">Comment & Rating </a><br>
                 <a href="Coupons.html">Coupons</a><br>
 			</td>
 		</tr>

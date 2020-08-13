@@ -49,6 +49,7 @@
                 if (substr_count($email, ' ') == 0) {
                     if (substr_count($email, '@') == 0) {
                         echo'Email must have "@"';
+                        $err = '';
                     } else if (substr_count($email, '@') == 1) {
                         if (strpos($email, '@') != 0) {
                             if (substr_count($email, '.') != 0) {
