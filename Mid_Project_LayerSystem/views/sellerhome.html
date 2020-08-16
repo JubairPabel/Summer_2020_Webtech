@@ -1,0 +1,44 @@
+
+<?php
+session_start();
+
+$name = $_SESSION['name']
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form >
+	<table width="500px" border="1" align="center">
+		<tr>
+			<td>
+				<a href="Logout.php">Logout</a>
+			</td>
+			<td align="center">
+				<h1> Welcome <?php   echo $name ?> </h1>
+				<br>
+				<br>
+				<a href="services.html">Services</a><br>
+				<a href="Packages.html">Packages</a><br>
+				<a href="C_Status.html">Current Status</a><br>
+				<a href="V_Profiles.html">View Profiles</a><br>
+				<a href="Payment.html">Payment</a><br>
+				<a href="D_Time.html">Delivery time</a><br>
+				<a href="O_Services.html">Offerd Services</a><br>
+				<a href="Help.html">Help!</a><br>
+				<a href="Reports.html">Reports</a><br>
+				<a href="FAQ.html">FAQ</a><br>
+				<a href="C_R.html">Comment & Rating </a><br>
+                <a href="Coupons.html">Coupons</a><br>
+			</td>
+		</tr>
+
+
+
+	</table>
+</form>
+</body>
+</html>
