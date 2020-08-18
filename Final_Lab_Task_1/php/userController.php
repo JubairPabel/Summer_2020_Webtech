@@ -34,10 +34,10 @@
 	if(isset($_POST['create_c'])){
 		$comp_name	= $_POST['cname'];
 		$comp_des	= $_POST['cdes'];
-		$comp_indus		= $_POST['industry'];
-		$comp_web		= $_POST['cweb'];
-		$comp_logo		= $_POST['clogo'];
-		$comp_id		= $_POST['uid'];
+		$comp_indus = $_POST['industry'];
+		$comp_web	= $_POST['cweb'];
+		$comp_logo	= $_POST['clogo'];
+		$comp_id	= $_POST['uid'];
 
 		if(empty($comp_name) || empty($comp_des) || empty($comp_indus) || empty($comp_web) || empty($comp_logo) || empty($comp_id)  ){
 			header('location: ../views/create_company.php?error=null_value');

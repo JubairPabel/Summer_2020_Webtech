@@ -47,7 +47,7 @@
 				<tr>
 					<td></td>
 					<td>
-						<input type="submit" name="create_c" value="Create"> 
+						<input type="submit" name="create_c" value="create"> 
 						<a href="companies.php">Back</a>
 					</td>
 				</tr>

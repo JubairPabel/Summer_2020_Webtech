@@ -10,7 +10,7 @@
 <body>
 	<h1>Companies<?=$_SESSION['username']?></h1> 
 	<a href="../views/create_company.php">Insert Company Information</a> |
-	<a href="../views/all_users.php">Compani list</a> |
+	<a href="../views/company_list.php">Compani list</a> |
 	<a href="home.php">Back</a> 
 </body>
 </html>
