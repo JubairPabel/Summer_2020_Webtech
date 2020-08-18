@@ -40,7 +40,7 @@
 			<td><?=$users[$i]['user_account_id']?></td>
 			<td>
 				<a href="edit_company.php?id=<?=$users[$i]['id']?>">Edit</a> |
-				<a href="delete.php?id=<?=$users[$i]['id']?>">Delete</a> 
+				<a href="delete_c.php?id=<?=$users[$i]['id']?>">Delete</a> 
 			</td>
 		</tr>
 

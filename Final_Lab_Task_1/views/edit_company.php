@@ -3,11 +3,10 @@
 	require_once('../service/userService.php');
 
 	if (isset($_GET['id'])) {
-		$user = getByID($_GET['id']);	
+		$user = getByID_c($_GET['id']);	
 	}else{
 		header('location: all_users.php');
 	}
-
 ?>
 
 <!DOCTYPE html>
