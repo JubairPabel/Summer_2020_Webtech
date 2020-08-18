@@ -100,4 +100,24 @@
 		}
 
 	}
+
+    function insert_c($comp){
+		$conn = dbConnection();
+
+		if(!$conn){
+			echo "DB connection error";
+		}
+
+		$sql = "insert into companies values('', '{$comp['username']}','{$comp['profile_description']}', '{$comp['industry']}', '{$comp['company_website']}','{$comp['company_logo']}','{$comp['user_account_id']}',)";
+		if(mysqli_query($conn, $sql)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+
+
+
+
 ?>
