@@ -1,5 +1,5 @@
 <?php 
-	session_start();
+	//session_start();
 	require_once('../php/session_header.php');
 	require_once('../service/userService.php');
 
@@ -61,6 +61,41 @@
 			}
 		}
 	}
+
+   	//Update Company
+	if(isset($_POST['edit_c'])){
+        $comp_name	= $_POST['cname'];
+		$comp_des	= $_POST['cdes'];
+		$comp_indus = $_POST['industry'];
+		$comp_web	= $_POST['cweb'];
+		$comp_logo	= $_POST['clogo'];
+		$comp_id	= $_POST['uid'];
+
+	if(empty($comp_name) || empty($comp_des) || empty($comp_indus) || empty($comp_web) || empty($comp_logo) || empty($comp_id)  ){
+			header('location: ../views/create_company.php?error=null_value');
+		}else{
+
+			$comp = [
+				'company_name'=> $comp_name,
+				'profile_description'=> $comp_des,
+				'industry'=> $comp_indus,
+				'company_website'=> $comp_web,
+				'company_logo'=> $comp_logo,
+				'user_account_id'=> $comp_id
+			];
+
+			$status = update_c($user);
+
+			if($status){
+				header('location: ../views/all_users.php?success=done');
+			}else{
+				header('location: ../views/edit.php?id={$id}');
+			}
+		}
+	}
+
+
+
 
 	//update user
 	if(isset($_POST['edit'])){

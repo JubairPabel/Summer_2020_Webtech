@@ -39,7 +39,7 @@
 			<td><?=$users[$i]['company_logo']?></td>
 			<td><?=$users[$i]['user_account_id']?></td>
 			<td>
-				<a href="edit.php?id=<?=$users[$i]['id']?>">Edit</a> |
+				<a href="edit_company.php?id=<?=$users[$i]['id']?>">Edit</a> |
 				<a href="delete.php?id=<?=$users[$i]['id']?>">Delete</a> 
 			</td>
 		</tr>

@@ -89,6 +89,25 @@
 		}
 	}
 
+function update_c($user){
+		$conn = dbConnection();
+		if(!$conn){
+			echo "DB connection error";
+		}
+
+		$sql = "update users set company_name='{$user['company_name']}', profile_description='{$user['profile_description']}', industry ='{$user['industry']}' ,company_website='{$user['company_website']}', company_logo='{$user['company_logo']}' , user_account_id ='{$user['user_account_id']}' where id={$user['id']}";
+
+		if(mysqli_query($conn, $sql)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+
+
+
+
 
 	function update($user){
 		$conn = dbConnection();
