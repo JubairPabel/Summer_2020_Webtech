@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>Last Task 3</title>
+	<script type= "text/javascript" src = "script.js"> </script>
+</head>
+<body>
+<form action="abc.php" onsubmit="return validate()" >
+<table border='1' align="Center" height ='50%' width = '45%'>
+	<th colspan="3" align ="Center" height="10%">
+		Personal Profile
+	</th>
+	<tr>
+		<td width ="20%" height = "8%"> Name </td>
+		<td width="50%"> <input type="text" id = "name" name="uid" value="" placeholder="" size="50px" align="Center"> </td>
+		<td id="nameMsg"> </td>
+		<td width="5%"></td>
+	</tr>
+	<tr>
+		<td width ="20%" height = "8%"> Email</td>
+        <td width="50%"> <input type="email" name="uid" value="" placeholder="" size="50px" align="Center"> </td>
+		<td width="5%"></td>
+	</tr>
+	<tr>
+		<td width ="20%" height = "8%"> Gender</td>
+		<td> <input type="radio" name="gender" value="" >  Male 
+				<input type="radio" name="gender" value="" > Female
+				<input type="radio" name="gender" value="" > Other</td>
+				<td width="5%"></td>
+
+	</tr>
+	<tr>
+		<td width ="20%" height = "8%"> Date Of Birth</td>
+		<td> <input type="date" name="dob" value="" placeholder=""></td>
+		<td width="5%"></td>
+
+	</tr>
+	<tr>
+		<td width ="20%" height = "8%"> Blood Group</td>
+		<td>
+			<select name="">
+				<option value="Admin">Admin</option>
+				<option value="User">User</option>
+             </select>
+         </td>
+         	<td width="5%"></td>
+	</tr>
+	<tr>
+		<td width ="20%" height = "8%"> Degree</td>
+		<td>
+			<input type="checkbox" name=""> SSC
+					<input type="checkbox" name=""> HSC 
+					<input type="checkbox" name=""> BSc.
+					<input type="checkbox" name=""> MSc.
+
+		</td>
+		<td width="5%"></td>
+	</tr>
+	<tr>
+		<td width ="20%" height = "8%"> Photo</td>
+		<td><input type="file" name=""></td>
+		<td width="5%"></td>
+	</tr>
+	<tr>
+		<td width="100%" colspan="3" align ="Center" height="8%"></td>
+	</tr>
+	<tr>
+		<td width="100%" colspan="3" align ="Center" height="10%">
+			<input type="submit" name="" value="Submit" size="90px" > 
+			<input type="reset" name="" value="Clear" width="100%"> 
+	</td>
+
+	</tr>
+	
+</table>
+</form>
+</body>
+</html>
