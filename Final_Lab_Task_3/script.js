@@ -15,6 +15,11 @@ function validate ()
         var gender = form.querySelectorAll('input[name="gender"]:checked');
 
 
+        var selector = form.querySelector('[name="blood"]');
+        var value = selector[selector.selectedIndex].value;
+
+
+
     if(username == ""){
 		document.getElementById('nameMsg').innerHTML = "username can't left empty";
 		return false;
@@ -68,16 +73,22 @@ function validate ()
 
         //gender
 
-        if (!gender.length) {
+        else if (!gender.length) {
           document.getElementById('genderMsg').innerHTML = "err aftr dot";
 			return false;
             
         }
-        else {
+        
+
+		// blood
+
+        else if(value == 0) {
+            document.getElementById('bloodMsg').innerHTML = "Select a group!";
 			return false;
-		}
-
-
+        } else 
+        {
+        	return true;
+        }
 
 
 
