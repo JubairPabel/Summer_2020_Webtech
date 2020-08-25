@@ -3,17 +3,6 @@
 function validate ()
 {
 	var username = document.getElementById('name').value;
-   
-    if(username == ""){
-		document.getElementById('nameMsg').innerHTML = "username can't left empty";
-		return false;
-
-	}
-
-    
-    
-
-
     var str;
 		var t=1;
 		str =document.getElementById('Email').value;
@@ -23,7 +12,16 @@ function validate ()
 		var part2=res[1];
         var dotsplt=part2.split(‘.’);
 
-		if(document.getElementById('Email').value==”")
+        var gender = form.querySelectorAll('input[name="gender"]:checked');
+
+
+    if(username == ""){
+		document.getElementById('nameMsg').innerHTML = "username can't left empty";
+		return false;
+
+	}
+ // email
+    else if(document.getElementById('Email').value==”")
 		{
 		alert(“Empty”);
 
@@ -67,8 +65,20 @@ function validate ()
 			return false;
 
 		}
-		else {
+
+        //gender
+
+        if (!gender.length) {
+          document.getElementById('genderMsg').innerHTML = "err aftr dot";
+			return false;
+            
+        }
+        else {
 			return false;
 		}
+
+
+
+
 
 }
