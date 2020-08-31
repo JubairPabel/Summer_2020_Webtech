@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>gender</title>
+    <script type="text/javascript" src="genderjs.js" ></script>
+</head>
+<body>
+    <form action="gender.php" onsubmit="return Validate()" method="POST">
+
+        <fieldset align = "center">
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="Male"  >Male
+            <input type="radio" name="gender" id="Female"  >Female
+            <input type="radio" name="gender" id="Other"  >Other
+        </fieldset>
+        <b><i id="gender_Msg"></i></b><br>
+        <input type="submit" name="submit" value="Submit" >
+    </form>
+    
+    
+</body>
+</html>

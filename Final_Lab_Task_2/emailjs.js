@@ -1,12 +1,12 @@
 
-
-
-
  function validate()
  {
  	str =document.getElementById('Email').value;
 
  var res = str.split(‘@’);
+ var part1=res[0];
+		var part2=res[1];
+        var dotsplt=part2.split(‘.’);
 
 if(document.getElementById('Email').value==”")
 		{
@@ -53,5 +53,5 @@ if(document.getElementById('Email').value==”")
 
 		}
 
- 
+
  }
