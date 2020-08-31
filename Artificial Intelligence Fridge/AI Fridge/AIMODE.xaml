@@ -1,0 +1,24 @@
+﻿<Window x:Class="AI_Fridge.AIMODE"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AI_Fridge"
+        mc:Ignorable="d"
+        Title="AIMODE" Height="450" Width="800">
+    <Grid>
+        <Button Content="Pay Now" HorizontalAlignment="Left" Margin="281,332,0,0" VerticalAlignment="Top" Width="197" Height="66" FontSize="36"/>
+        <RichTextBox HorizontalAlignment="Left" Height="285" Margin="25,32,0,0" VerticalAlignment="Top" Width="398">
+            <FlowDocument/>
+        </RichTextBox>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="584,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="438,128,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="82" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="438,65,0,0" TextWrapping="Wrap" Text="Card Number" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="584,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" FontSize="18"/>
+        <Button Content="ACTIVATE AI " HorizontalAlignment="Left" Margin="511,195,0,0" VerticalAlignment="Top" Width="203" Height="55" Click="Button_Click" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,10,0,0" TextWrapping="Wrap" Text="AI HISTORY" VerticalAlignment="Top"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="25,383,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Speak" HorizontalAlignment="Left" Margin="694,383,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

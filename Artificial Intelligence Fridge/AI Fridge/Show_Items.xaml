@@ -1,0 +1,19 @@
+﻿<Window x:Class="AI_Fridge.Show_Items"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AI_Fridge"
+        mc:Ignorable="d"
+        Title="Show_Items" Height="450" Width="800">
+    <Grid>
+        <RichTextBox HorizontalAlignment="Left" Height="256" Margin="40,47,0,0" VerticalAlignment="Top" Width="702" FontFamily="BatmanForeverOutline">
+            <FlowDocument/>
+        </RichTextBox>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="23,377,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Speak" HorizontalAlignment="Left" Margin="696,377,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Show Items!!" HorizontalAlignment="Left" Margin="275,331,0,0" VerticalAlignment="Top" Width="234" Height="66" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="123,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="513" Height="32" FontSize="22"><Run Text="                             "/><Run FontFamily="Showcard Gothic" Text="AVAILABLE ITEMS"/></TextBlock>
+
+    </Grid>
+</Window>

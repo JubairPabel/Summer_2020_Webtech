@@ -1,0 +1,36 @@
+﻿<Window x:Class="AI_Fridge.Get_Items"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AI_Fridge"
+        mc:Ignorable="d"
+        Title="Get_Items" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnspeak" Content="Speak" HorizontalAlignment="Left" Margin="707,373,0,0" VerticalAlignment="Top" Width="75" Click="btnspeak_Click"/>
+        <Button x:Name="btnback" Content="Back" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top" Width="75" Click="btnback_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="543,59,0,0" TextWrapping="Wrap" Text="Chicken" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="543,103,0,0" TextWrapping="Wrap" Text="Beef" VerticalAlignment="Top" Width="58"/>
+        <TextBlock HorizontalAlignment="Left" Margin="543,153,0,0" TextWrapping="Wrap" Text="Milk" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="543,202,0,0" TextWrapping="Wrap" Text="Cucumber" VerticalAlignment="Top" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="543,243,0,0" TextWrapping="Wrap" Text="Capsicum" VerticalAlignment="Top" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="545,286,0,0" TextWrapping="Wrap" Text="Egg" VerticalAlignment="Top"/>
+        <RichTextBox HorizontalAlignment="Left" Height="292" Margin="10,31,0,0" VerticalAlignment="Top" Width="473" TextChanged="RichTextBox_TextChanged">
+            <FlowDocument/>
+        </RichTextBox>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="613,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="613,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="613,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="614,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="614,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="614,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="738,62,0,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Width="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="738,106,0,0" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Width="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="738,153,0,0" TextWrapping="Wrap" Text="Litre" VerticalAlignment="Top" Width="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="739,201,0,0" TextWrapping="Wrap" Text="Pc's" VerticalAlignment="Top" Width="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="739,246,0,0" TextWrapping="Wrap" Text="Pc's" VerticalAlignment="Top" Width="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="738,289,0,0" TextWrapping="Wrap" Text="Pc's" VerticalAlignment="Top" Width="27"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Items History" VerticalAlignment="Top"/>
+        <Button Content="GET ITEMS!!" HorizontalAlignment="Left" Margin="283,341,0,0" VerticalAlignment="Top" Width="213" Height="45" Click="Button_Click" FontSize="22"/>
+    </Grid>
+</Window>
