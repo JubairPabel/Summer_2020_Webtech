@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="bloodjs.js"></script>
+    <title>blood group</title>
+</head>
+<body>
+    <form action="bg.php" onsubmit="return Validate()" method="POST">
+        Blood Group 
+        <select name="blood" id="bloodgroup">
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="O+">O+</option>
+            <option value="AB+">AB+</option>
+            <option value="A-">A-</option>
+            <option value="B-">B-</option>
+            <option value="O-">O-</option>
+            <option value="AB-">AB-</option>
+        </select>   <i id="blood_Msg"></i> <br><br>
+        <input type="submit" name="submit" value="Submit" >
+
+    </form>
+    
+    
+</body>
+</html>
