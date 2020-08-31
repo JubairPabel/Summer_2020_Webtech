@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <script type="text/javascript" src="dobjs.js"></script>
+    <title>Date of Birth </title>
+</head>
+<body>
+    <form action="dob.php" onsubmit="return Validate()" method="POST">
+        <fieldset align = "center">
+            <legend>Date of Birth</legend>
+             <p >  dd /mm/yyyy </p>
+            <input type="number" id="date" name="date" > / 
+            <input type="number" id="month" name="month"> /
+            <input type="number" id="year" name="year" >
+            <hr>
+        </fieldset>
+        <i id="dob_msg"></i>
+        <br>
+
+        <input type="submit" name="submit" value="Submit">
+
+    </form>
+    
+</body>
+</html>
