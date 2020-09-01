@@ -13,10 +13,13 @@
 				</tr>";
 
 	while ($row = mysqli_fetch_assoc($result)) {
+		if($row['email'] == $email){
 			$data .= "<tr>
-							<td>{$row['email']}</td>
+							<td>Email Exists </td>
 					</tr>";
-	}
+		}
+		}
+	
 
 	$data .= "</table>";
 
