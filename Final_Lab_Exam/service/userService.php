@@ -18,4 +18,23 @@ function insert($user){
 		}
 	}
 
+		function getAllUser(){
+		$conn = dbConnection();
+
+		if(!$conn){
+			echo "DB connection error";
+		}
+
+		$sql = "select * from users";
+		$result = mysqli_query($conn, $sql);
+		$users = [];
+
+		while($row = mysqli_fetch_assoc($result)){
+			array_push($users, $row);
+		}
+
+		return $users;
+	}
+
+
 ?>
