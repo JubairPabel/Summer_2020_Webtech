@@ -36,5 +36,9 @@ function insert($user){
 		return $users;
 	}
 
+	function Update(){
+		
+	}
+
 
 ?>
