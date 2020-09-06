@@ -12,5 +12,6 @@
 	<a href="../views/create_a.php">Create New Author</a> |
 	<a href="../views/all_users.php">Author List</a> |
 	<a href="../php/logout.php">Logout</a> 
+	<a href="../php/search.php">Search</a> 
 </body>
 </html>
