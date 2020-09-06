@@ -24,27 +24,30 @@
        function load()
        {
        	var username = ocument.getElementByname('username').value;
+       		var password = ocument.getElementByname('passord').value;
 
        	var xhttp = new XMLHttpRequest();
-		xhttp.open('POST', 'db.php', true);
+		xhttp.open('POST', 'php/logcheck.php', true);
 		xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-		xhttp.send('username='+username);
+		xhttp.send('username='+username , 'password='+password);
+
+		xhttp.onreadystatechange = function (){
+					if(this.readyState == 4 && this.status == 200){
+
+						if(this.responseText == "ok"){
+							location.replace("index.php")
+						} else if (this.responseText == "not") {
+							document.getElementById('home').style.display = 'none';
+						}
+					}	
+				}
 
        }
 
 
 
-		function check()
-		{
-			var username = ocument.getElementByname('username').value;
-			var password = ocument.getElementByname('password').value;
 
-			if(username == ""){
-		document.getElementById('nameMsg').innerHTML = "username can't left empty";
-		return false;
-
-	}
-		}
+		
 
 	</script>
 </body>
