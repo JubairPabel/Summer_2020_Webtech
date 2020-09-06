@@ -35,7 +35,7 @@
 					if(this.readyState == 4 && this.status == 200){
 
 						if(this.responseText == "ok"){
-							location.replace("index.php")
+							location.replace("main.php")
 						} else if (this.responseText == "not") {
 							document.getElementById('home').style.display = 'none';
 						}
